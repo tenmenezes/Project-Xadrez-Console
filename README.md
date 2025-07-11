@@ -2,42 +2,53 @@
 
 > ⚠️ Projeto em desenvolvimento — atualizações frequentes.
 
-Este é um projeto em C# que simula um jogo de xadrez no ambiente de console. O foco está em praticar lógica de programação orientada a objetos, estruturação de código e boas práticas de C#.
+Este é um projeto em C# que simula um jogo de xadrez no console. O objetivo é praticar lógica de programação orientada a objetos, estruturação de código e boas práticas de C#.
 
 ---
 
-## 📌 Funcionalidades (em andamento)
+## 📌 Funcionalidades
 
-- Representação do tabuleiro de xadrez no console
-- Classes para peças (Rei, Rainha, Torre, Bispo, Cavalo, Peão)
-- Movimentação das peças com validação de regras
-- Controle de turno e captura de peças
-- Sistema de entrada e saída de dados no terminal
+- Representação visual do tabuleiro de xadrez no console
+- Classes para todas as peças (Rei, Dama, Torre, Bispo, Cavalo, Peão)
+- Movimentação das peças com validação completa das regras oficiais
+- Controle de turno, captura de peças e xeque/xeque-mate
+- Jogadas especiais: roque, promoção de peão e en passant
+- Sistema de entrada e saída de dados pelo terminal
+- Tratamento de erros e validação de jogadas inválidas
 
 ---
 
 ## 🧠 Conceitos aplicados
 
 - Programação Orientada a Objetos (POO)
-- Encapsulamento e abstração
-- Herança e polimorfismo
-- Manipulação de arrays e coleções
-- Estruturação modular de código
+- Encapsulamento, abstração, herança e polimorfismo
+- Manipulação de arrays e coleções (`HashSet`)
+- Estruturação modular e separação de responsabilidades
+- Tratamento de exceções
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-Project-Xadrez-Console/
-├── .gitignore
-├── LICENSE.txt
-├── Project-Xadrez.sln
-├── Project-Xadrez/
-│   ├── Program.cs
-│   ├── Tabuleiro/
-│   ├── Pecas/
-│   └── ...
+Project-Xadrez/
+├── Program.cs
+├── Tela.cs
+├── tabuleiro/
+|   ├── Cor.cs
+|   ├── Peca.cs
+|   ├── Posicao.cs
+|   ├── Tabuleiro.cs
+|   └── TabuleiroException.cs
+├── xadrez/
+|   ├── PartidaDeXadrez.cs
+|   ├── PosicaoXadrez.cs
+|   ├── Rei.cs
+|   ├── Dama.cs
+|   ├── Torre.cs
+|   ├── Bispo.cs
+|   ├── Cavalo.cs
+|   └── Peao.cs
 └── README.md
 ```
 
@@ -46,18 +57,20 @@ Project-Xadrez-Console/
 ## 🚀 Como executar
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/tenmenezes/Project-Xadrez-Console.git
-   ```
-2. Abra no Visual Studio (ou VS Code com extensão C#)
+```
+ git clone https://github.com/tenmenezes/Project-Xadrez-Console.git
+```
+2. Abra a solução `Project-Xadrez.sln` no Visual Studio (ou o diretório no VS Code com extensão C#)
+
 3. Compile e execute o projeto
 
 ---
 
 ## ✅ Requisitos
 
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download) instalado
-- Terminal/IDE com suporte a execução de código C#
+- [.NET SDK 8.0+](https://dotnet.microsoft.com/en-us/download) instalado
+- Visual Studio 2022 ou VS Code com extensão C#
+- Terminal/IDE com suporte à execução de projetos C#
 
 ---
 
