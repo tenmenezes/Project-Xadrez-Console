@@ -1,6 +1,6 @@
 # ♟️ Projeto Xadrez Console
 
-> ⚠️ Projeto em desenvolvimento — atualizações frequentes.
+> ⚠️ Projeto concluído.
 
 Este é um projeto em C# que simula um jogo de xadrez no console. O objetivo é praticar lógica de programação orientada a objetos, estruturação de código e boas práticas de C#.
 
